@@ -1,0 +1,32 @@
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: @page-background-color;
+  overflow: hidden;
+  z-index: 0;
+  font-size: @font-base-size; //基本字体
+
+  .page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: @header-height;
+    background-color: #0076FF;
+  }
+  .page-content {
+    position: absolute;
+    top: @header-height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 0;
+    // touch-action: none;                 // prevent default touch action
+    -webkit-overflow-scrolling: touch;    // scroll effect optimize in safari
+  }
+}
